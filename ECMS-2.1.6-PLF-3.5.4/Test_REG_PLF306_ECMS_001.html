@@ -72,6 +72,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>check with the name of category is &gt; 30 and &lt; 150 characters</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=taxonomyName</td>
 	<td>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</td>
@@ -97,13 +102,93 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[@id='UITaxonomyTreeCreateChild']/div[2]/div/div/div/div/div[4]/a/div</td>
+	<td>assertElementPresent</td>
+	<td>//div[@title=&quot;bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb&quot;]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</td>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Edit the &quot;Catefory Tree&quot; of intranet portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[3][@class=&quot;EvenRow&quot;]/td/div[@class=&quot;ActionContainer&quot;]/img[@class=&quot;Edit16x16Icon&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Add new Taxonomy under a tree of taxonomies with its name = 130 characters</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@title=&quot;Add&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>check with the name of category is &gt; 150 characters</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=taxonomyName</td>
+	<td>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id=&quot;UITaxonomyTreeCreateChildForm&quot;]/div/div/div/a[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Category name must not have more than 150 characters</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[text()=&quot;OK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id=&quot;UITaxonomyTreeCreateChildForm&quot;]/div/div/div/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
